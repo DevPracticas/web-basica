@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #numero{
+            border: 0;
+            border-bottom: 1px solid;
+        }
+        #tarea1, #tarea2{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            padding: 10px 0;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="tarea1">
+        <input type="text" placeholder="Ingrese el Nombre" id="nombre" onkeypress="apellido.focus()">
+        <input type="text" placeholder="Ingrese el Apellido" id="apellido" onkeypress="correo.focus()">
+        <input type="email" placeholder="Ingrese el correo" id="correo" onkeypress="direccion.focus()">
+        <input type="text" placeholder="Ingrese la dirección" id="direccion" onkeypress="telefono.focus()">
+        <input type="tel" placeholder="Ingrese el teléfono" id="telefono">
+        <input type="button" value="Saludar" onclick="fun1()">
+
+        <label id="respuesta"></label>
+    </div>
+
+    <div id="tarea2">
+        <input type="number" placeholder="Ingrese el rádio" id="radio">
+        <input type="button" value="Calcular" onclick="calculaArea()">
+        <label id="area"></label>
+    </div>
+</body>
+</html>

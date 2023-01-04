@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>ejercicios lineales</h1>
+    
+    <fieldset>
+        <form action="#" onsubmit="calcularArea()">
+            <legend>Área del triángiulo</legend>
+            <label for="base">Ingrese la base</label>
+            <input type="text" id="base" required minlength="1" maxlength="8">
+            
+            <!-- <input type="number" id="base" required min="3" max="8"> -->
+
+            <!-- <input type="date" placeholder="fecha" min="2023-01-04" max="2024-02-20"> -->
+
+            <label for="">subir imagen</label>
+            <input type="file" accept="image/jpeg">
+
+            <datalist id="paises">
+                <option value="ecuador">ecuador</option>
+                <option value="peru">peru</option>
+                <option value="colombia">colombia</option>
+            </datalist>
+            <input type="text" placeholder="lista de paises" list="paises">
+
+
+            <label for="altura">Ingrese la altura</label>
+            <input type="text" id="altura" required >
+
+            <label >El área es: </label> <span id="respuestaArea"></span>
+            <input type="submit" value="Calcular" onclick="">
+        </form>
+    </fieldset>
+
+        <br><br>
+
+        <h1>ejercicios alternativos</h1>
+
+    <fieldset>
+        <form onsubmit="mayorTresNumeros()">
+            <legend>Mayor de tres númros</legend>
+            <label for="num1">Ingrese el número 1</label>
+            <input type="text" id="num1" required>
+
+            <label for="num2">Ingrese el número 2</label>
+            <input type="text" id="num2" required>
+
+            <label for="num3">Ingrese el número 3</label>
+            <input type="text" id="num3" required>
+ 
+            <label >El mayor es: </label> <span id="respuestaMayor"></span>
+            <input type="submit" value="Calcular" onclick="">
+        </form>
+    </fieldset>
+
+        <script src="app.js"></script>
+</body>
+</html>
